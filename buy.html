@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+h1 {
+   text-align: center;
+   color: white; 
+   font-size: 400%; 
+   font-family:Palatino Linotype; 
+   margin=0;
+   line-height: 0.2;   
+}
+ 
+.modify {
+   text-align: center;
+   color: white; 
+   font-size: 300%; 
+   font-family:Times New Roman; 
+   line-height: 0.2;
+   
+}
+ 
+
+a:link {
+  background-color: grey;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 15px 15px 0 0;
+} 
+a:hover {
+   background-color: orange;
+}
+
+#inp1 {
+   width: 250px;
+   height: 20px;
+}
+
+#inp2 {
+   width: 300px;
+   height: 200px; 
+}
+
+.modify2 {
+    text-align: center;
+	color: white;
+	font-size: 20px;
+	line-height: 1.5;
+}
+</style>
+<head>
+</head>
+<body background="http://ebookfriendly.com/wp-content/uploads/2013/11/Library-a-book-wallpaper-540x405.jpg" width=100% height=100%>
+<h1> Novel Idea!</h1>
+<p class="modify"> What would you read? </p>
+<a href="books_page.html">Home</a>
+<a href="genre.html">Genre</a>
+<a href="contact.html">Contact us</a>
+<hr>
+<p class="modify2">
+  Book Name: <br><input type="text" name="name"><br>
+  Your email:<br><input id=inp1 type="text" name="mail"><br>
+  Quantity: <br><input type="text" name="quantity"><br>
+  Address: <br><input id=inp2 type="text" name="address"><br>
+  <button onclick="send">Send</button>
+</p>
+</body>
+</html>

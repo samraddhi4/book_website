@@ -1,0 +1,51 @@
+<!--Nishit Mehta - Forms -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM</title>
+</head>
+<body>
+
+<form id="form" method="post"> 
+			<fieldset>
+				Firstname : <input type="Firstname" name="Firstname" placeholder="Firstname" required autofocus="true">
+				Middlename : <input type="Middlename" name="Middlename" placeholder="Middlename" required>
+				Lastname : <input type=":Lastname" name="Lastname" placeholder="Lastname" required><br>
+			</fieldset>
+			<br>
+			<fieldset>
+				Gender : <br><input type="radio" name="gender" value="Male">Male<br>
+						 <input type="radio" name="gender" value="Female">Female<br>
+						 <input type="radio" name="gender" value="Other">Other<br>
+			</fieldset><br>
+			<fieldset>
+				Email ID : <input type="email" name="email" required>
+				Password : <input type="Password" name="Password" id="pass1" maxlength="15" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+				Confirm Password : <input type="Password" name="Password" id="pass2" maxlength="15" required>
+			</fieldset>
+			<script type="text/javascript">
+				function validpass()
+				{
+					var pass1=document.getElementById("pass1").value;
+					var pass2=document.getElementById("pass2").value;
+					if(pass1!=pass2)
+					{
+						alert("Passwords Don't Match");
+						//document.getElementById("submit").disable=true;	
+						return false;
+					}
+					//document.getElementById("submit").disable=false;
+					return true;
+				}
+			</script>
+			<br>
+			<fieldset>
+				Phone No. : <input type="text" name="code" maxlength="3" size="3">  <input type="Phone" name="Phone" minlength="12" maxlength="12" required pattern="[0-9]+" title="Must contain only numbers">
+			</fieldset>
+				<br>
+				<input type="submit" name="Submit" id="submit" >  
+				<input type="reset" name="reset">
+		</form>
+	</body>
+</html>
